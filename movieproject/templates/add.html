@@ -1,0 +1,11 @@
+{% extends 'basic.html' %}
+{% block body %}
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="text" name="name" placeholder="name"><br>
+  <input type="text" name="desc" placeholder="desc"><br>
+  <input type="text" name="year" placeholder="year"><br>
+  <input type="file" name="img"><br>
+  <input type="submit">
+</form>
+{% endblock %}
